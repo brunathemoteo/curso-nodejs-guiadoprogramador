@@ -6,9 +6,12 @@
 
 {{#each categorias}}
     <div class="card mt-4">
-        <h4>{{nome}}</h4>
-        <small>Slug: {{slug}}</small>
-        <small>Data de criação: {{date}}</small>
+        <div class="card-body">
+            <h4>{{nome}}</h4>
+            <small>Slug: {{slug}}</small><br>
+            <small>Data de criação: {{date}}</small><br>
+            <a href="/admin/categorias/edit/{{_id}}"><button class="btn btn-success btn-sm mt-4">Editar categoria</button></a>
+        </div>
     </div>
 {{else}}
 {{/each}}
